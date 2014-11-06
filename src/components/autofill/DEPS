@@ -1,0 +1,14 @@
+include_rules = [
+  "+google_apis/gaia/gaia_urls.h",
+  "+grit",  # For generated headers
+  "+jni",
+  "+net",
+  "+ui",
+  # Autofill is a layered component; subdirectories must explicitly introduce
+  # the ability to use the content layer as appropriate.
+  "-components/autofill/content",
+  # TODO(blundell): This subtraction can be eliminated once crbug.com/314560 is
+  # fixed.
+  "-components/user_prefs/user_prefs.h",
+  "-content/public/common",
+]
