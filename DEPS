@@ -98,8 +98,15 @@ hooks = [
   },  
   {
     # A change to a .gyp, .gypi, or to GYP itself should run the generator.
-    "name": "gyp",
+    #"name": "gyp",
+    #"pattern": ".",
+    #"action": ["python", "src/src/build/gyp_chromium src/src/rhino/rhino.gyp --depth=."],
+  },
+  {
+    # A change to a .gyp, .gypi, or to GYP itself should run the generator.
+    "name": "echo",
     "pattern": ".",
-    "action": ["python", "src/src/build/gyp_chromium src/src/rhino/rhino.gyp --depth=."],
+    "action": ["echo" "python"
+                "build/gyp_chromium rhino/rhino.gyp --depth=."],
   },
 ]
