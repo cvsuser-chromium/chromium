@@ -146,6 +146,8 @@ v8.log
 /media/yuv_convert_simd_x86.xml
 /metro_driver
 /native_client
+/native_client_sdk/
+/rhino
 /net/Debug
 /net/net_unittests_run.xml
 /net/Release
@@ -180,6 +182,7 @@ v8.log
 /testing/gtest
 /testing/iossim/third_party/
 /testserver.log
+/third_party/ 
 /third_party/accessibility-developer-tools/
 /third_party/adobe/flash/binaries
 /third_party/adobe/flash/symbols
