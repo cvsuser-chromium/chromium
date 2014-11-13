@@ -176,10 +176,10 @@ v8.log
 /remoting/remoting_version_resources.xml
 /remoting/tools/internal/
 /sandbox/linux/seccomp-legacy/
-/sdch/open-vcdiff
+#/sdch/open-vcdiff
 /seccompsandbox
-/testing/gmock
-/testing/gtest
+#/testing/gmock
+#/testing/gtest
 /testing/iossim/third_party/
 /testserver.log
 /third_party
