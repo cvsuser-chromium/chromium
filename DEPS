@@ -96,12 +96,12 @@ hooks = [
                "-s", "src/src/rhino",
                "-o", "src/src/build/util/LASTCHANGE.rhino"],
   },  
-  {
+  #{
     # A change to a .gyp, .gypi, or to GYP itself should run the generator.
     #"name": "gyp",
     #"pattern": ".",
     #"action": ["python", "src/src/build/gyp_chromium src/src/rhino/rhino.gyp --depth=."],
-  },
+  #},
   {
     # A change to a .gyp, .gypi, or to GYP itself should run the generator.
     "name": "echo",
