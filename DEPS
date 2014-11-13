@@ -29,7 +29,7 @@ deps = {
   "src/src/rhino":
     Var("chromium_rhino_git") + "/librhino.git",
 
-  "src/src":
+  "src/src/native_client":
     Var("chromium_rhino_git") + "/native_client.git",
  
   "src/src/v8":
