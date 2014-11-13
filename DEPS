@@ -26,6 +26,9 @@ vars = {
 }
 
 deps = {
+  "src/src/rhino":
+    Var("chromium_rhino_git") + "/librhino.git",
+
   "src/src":
     Var("chromium_rhino_git") + "/native_client.git",
  
