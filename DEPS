@@ -82,7 +82,7 @@ hooks = [
     "name": "lastchange",
     "pattern": ".",
     "action": ["python", "src/src/build/util/lastchange.py",
-               "-o", "src/src/build/util/LASTCHANGE"],
+               "-o", "src/src/build/util/LASTCHANGE.chromium"],
   },
   {
     # Update LASTCHANGE.blink. This is also run by export_tarball.py in
@@ -90,13 +90,13 @@ hooks = [
     "name": "lastchange",
     "pattern": ".",
     "action": ["python", "src/src/build/util/lastchange.py",
-               "-s", "src/src/third_party/WebKit",
-               "-o", "src/src/build/util/LASTCHANGE.blink"],
+               "-s", "src/src/rhino",
+               "-o", "src/src/build/util/LASTCHANGE.rhino"],
   },  
   {
     # A change to a .gyp, .gypi, or to GYP itself should run the generator.
     "name": "gyp",
     "pattern": ".",
-    "action": ["python", "src/src/build/gyp_chromium"],
+    "action": ["python", "src/src/build/gyp_chromium rhino\rhino.gyp --depth=."],
   },
 ]
