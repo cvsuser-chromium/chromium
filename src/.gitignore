@@ -146,7 +146,7 @@ v8.log
 /media/yuv_convert_simd_x86.xml
 /metro_driver
 /native_client
-/native_client_sdk/
+#/native_client_sdk/
 /rhino
 /net/Debug
 /net/net_unittests_run.xml
