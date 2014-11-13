@@ -100,6 +100,6 @@ hooks = [
     # A change to a .gyp, .gypi, or to GYP itself should run the generator.
     "name": "gyp",
     "pattern": ".",
-    "action": ["python", "src/src/build/gyp_chromium rhino\rhino.gyp --depth=."],
+    "action": ["python", "src/src/build/gyp_chromium rhino/rhino.gyp --depth=."],
   },
 ]
