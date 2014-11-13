@@ -52,7 +52,8 @@ v8.log
 /build/ipch/
 /build/Release
 /build/Release_x64
-/build/util/LASTCHANGE*
+/build/util/LASTCHANGE.rhino
+/build/util/LASTCHANGE.chromium
 /build/util/support
 /build/x64/
 # The Chrome OS build creates a /c symlink due to http://crbug.com/54866.
