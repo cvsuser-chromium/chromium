@@ -37,6 +37,11 @@ deps = {
   
   "src/src/third_party":
     Var("chromium_rhino_git") + "/chromium-third-party.git",
+    
+  "src/src/third_party/angle_dx11":
+    Var("chromium_rhino_git") + "/chromium-third-party_angle_dx11.git",
+  "src/src/third_party/ffmpeg":
+    Var("chromium_rhino_git") + "/chromium-third-party_ffmpeg.git",
 
   "src/src/third_party/WebKit":
     Var("chromium_rhino_git") + "/third_party_WebKit.git",
@@ -53,9 +58,7 @@ deps = {
   "src/src/third_party/libjingle":
     Var("chromium_rhino_git") + "/libjingle.git",
     
-  "src/src/third_party/angle_dx11":
-    Var("chromium_rhino_git") + "/chromium-third-party_angle_dx11.git",
-}
+} 
 
 
 deps_os = {
