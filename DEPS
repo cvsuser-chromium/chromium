@@ -28,10 +28,13 @@ vars = {
 deps = {
   "src/src/rhino":
     Var("chromium_rhino_git") + "/librhino.git",
-
+    
   "src/src/native_client":
     Var("chromium_rhino_git") + "/native_client.git",
- 
+    
+  "src/src/tools":
+    Var("chromium_rhino_git") + "/chromium-tools.git",
+    
   "src/src/v8":
     Var("chromium_rhino_git") + "/chromium-v8.git",
   
@@ -40,6 +43,7 @@ deps = {
     
   "src/src/third_party/angle_dx11":
     Var("chromium_rhino_git") + "/chromium-third-party_angle_dx11.git",
+
   "src/src/third_party/ffmpeg":
     Var("chromium_rhino_git") + "/chromium-third-party_ffmpeg.git",
 
