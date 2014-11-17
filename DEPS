@@ -52,6 +52,9 @@ deps = {
 
   "src/src/third_party/libjingle":
     Var("chromium_rhino_git") + "/libjingle.git",
+    
+  "src/src/third_party/angle_dx11":
+    Var("chromium_rhino_git") + "/chromium-third-party_angle_dx11.git",
 }
 
 
