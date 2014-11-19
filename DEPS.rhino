@@ -26,34 +26,34 @@ vars = {
 }
 
 deps = {
-  "src/src/rhino":
+  "src/rhino":
     Var("chromium_rhino_git") + "/librhino.git",
 
-  "src/src/native_client":
+  "src/native_client":
     Var("chromium_rhino_git") + "/native_client.git",
  
-  "src/src/v8":
+  "src/v8":
     Var("chromium_rhino_git") + "/chromium-v8.git",
   
-  "src/src/third_party":
+  "src/third_party":
     Var("chromium_rhino_git") + "/chromium-third-party.git",
 
-  "src/src/third_party/WebKit":
+  "src/third_party/WebKit":
     Var("chromium_rhino_git") + "/third_party_WebKit.git",
 
-  "src/src/third_party/icu":
+  "src/third_party/icu":
     Var("chromium_rhino_git") + "/third_party_icu.git",
 
-  "src/src/third_party/perl":
+  "src/third_party/perl":
     Var("chromium_rhino_git") + "/third_party_perl.git",
 
-  "src/src/third_party/hunspell_dictionaries":
+  "src/third_party/hunspell_dictionaries":
     Var("chromium_rhino_git") + "/third_party_hunspell_dictionaries.git",
 
-  "src/src/third_party/libjingle":
+  "src/third_party/libjingle":
     Var("chromium_rhino_git") + "/libjingle.git",
     
-  "src/src/third_party/angle_dx11":
+  "src/third_party/angle_dx11":
     Var("chromium_rhino_git") + "/chromium-third-party_angle_dx11.git",
 }
 
@@ -87,28 +87,28 @@ hooks = [
     # src/tools/export_tarball - please keep them in sync.
     "name": "lastchange",
     "pattern": ".",
-    "action": ["python", "src/src/build/util/lastchange.py",
-               "-o", "src/src/build/util/LASTCHANGE.chromium"],
+    "action": ["python", "src/build/util/lastchange.py",
+               "-o", "src/build/util/LASTCHANGE.chromium"],
   },
   {
     # Update LASTCHANGE.blink. This is also run by export_tarball.py in
     # src/tools/export_tarball - please keep them in sync.
     "name": "lastchange",
     "pattern": ".",
-    "action": ["python", "src/src/build/util/lastchange.py",
-               "-s", "src/src/rhino",
-               "-o", "src/src/build/util/LASTCHANGE.rhino"],
+    "action": ["python", "src/build/util/lastchange.py",
+               "-s", "src/rhino",
+               "-o", "src/build/util/LASTCHANGE.rhino"],
   },  
   #{
     # A change to a .gyp, .gypi, or to GYP itself should run the generator.
     #"name": "gyp",
     #"pattern": ".",
-    #"action": ["python", "src/src/build/gyp_chromium src/src/rhino/rhino.gyp --depth=."],
+    #"action": ["python", "src/build/gyp_chromium src/rhino/rhino.gyp --depth=src"],
   #},
   {
     # A change to a .gyp, .gypi, or to GYP itself should run the generator.
     "name": "echo",
     "pattern": ".",
-    "action": ["echo", "python build/gyp_chromium rhino/rhino.gyp --depth=."],
+    "action": ["echo", "python build/gyp_chromium rhino/rhino.gyp --depth=src"],
   },
 ]
