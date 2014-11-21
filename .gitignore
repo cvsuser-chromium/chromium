@@ -45,7 +45,7 @@ v8.log
 /android_emulator_sdk
 /arm-sysroot
 /base/base_unittests_run.xml
-/breakpad/src/
+#/breakpad/src/
 /build/Debug
 /build/Debug_x64
 /build/gomacc.lock
@@ -139,7 +139,7 @@ v8.log
 /gpu/gles2_conform_test
 /gyp-mac-tool
 /llvm
-/media/cdm/ppapi/api
+#/media/cdm/ppapi/api
 /media/media_asm.xml
 /media/test/data/content
 /media/test/data/security
